@@ -11,6 +11,8 @@ jobs:
     - name: Environment Config
       run: |
         echo "$HOME/go/bin" >> $GITHUB_PATH
+        # Set /bin writable for golangci-lint.sh (TODO: refactor w/ golangci/golangci-lint-action@v2 action)
+        sudo chmod 777 /bin/
     - name: Checkout Repo
       uses: actions/checkout@v2
     - name: Restore Go Modules Cache
