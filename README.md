@@ -301,3 +301,4 @@ Release information
 
 Autotag itself uses `autotag` to increment releases. The default [autotag](#scheme-autotag-default)
 scheme is used for version selection.
+
